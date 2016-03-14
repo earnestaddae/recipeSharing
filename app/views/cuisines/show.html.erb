@@ -1,6 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Recipes</h1>
+<h1><%= @cuisine.name %></h1>
+<p>Recipes with cuisine <%= @cuisine.name %></p>
 
 <table class="table table-responsive">
   <thead>
@@ -37,7 +36,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Recipe', new_recipe_path %>

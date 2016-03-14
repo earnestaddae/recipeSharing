@@ -1,7 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Recipes</h1>
-
+<h1><%= @food_type.name %></h1>
+<p>Recipes with food type <%= @food_type.name %></p>
 <table class="table table-responsive">
   <thead>
     <tr>
@@ -37,7 +35,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Recipe', new_recipe_path %>

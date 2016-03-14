@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :food_types, only: [:show]
+  resources :food_preferences, only: [:show]
+  resources :cuisines, only: [:show]
   devise_for :users
   resources :recipes
   root 'recipes#index'

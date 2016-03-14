@@ -1,0 +1,30 @@
+<div class="panel panel-primary" id="panels">
+  <div class="panel-heading">
+    Food Preferences
+  </div>
+  <div class="panel-body">
+    <% FoodPreference.all.each do |fp| %>
+      <p><%= link_to fp.name, food_preference_path(fp) %></p>
+    <% end %>
+  </div>
+</div>
+<div class="panel panel-primary" id="panels">
+  <div class="panel-heading">
+    Food Types
+  </div>
+  <div class="panel-body">
+    <% FoodType.all.each do |ft| %>
+      <p><%= link_to ft.name, food_type_path(ft) %></p>
+    <% end %>
+  </div>
+</div>
+<div class="panel panel-primary" id="panels">
+  <div class="panel-heading">
+    Cuisines
+  </div>
+  <div class="panel-body">
+    <% Cuisine.all.each do |cuis| %>
+      <p><%= link_to cuis.name, cuisine_path(cuis) %></p>
+    <% end %>
+  </div>
+</div>
