@@ -20,8 +20,8 @@
     <%= f.text_field :cooking_time, class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= f.label :difficulty_level %><br>
-    <%= f.text_field :difficulty_level, class: "form-control" %>
+    <%= f.label :difficulty_level %>
+    <%= f.select :difficulty_level, Recipe::DIFFICULTY, {}, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.label :food_type %><br>
